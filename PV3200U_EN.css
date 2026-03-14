@@ -1,24 +1,318 @@
-﻿ table.main {}
- tr.row {}
- td.cell {}
- div.block {}
- div.paragraph {}
- .font0 { font:5pt Arial, sans-serif; }
- .font1 { font:6pt Arial, sans-serif; }
- .font2 { font:7pt Arial, sans-serif; }
- .font3 { font:8pt Arial, sans-serif; }
- .font4 { font:9pt Arial, sans-serif; }
- .font5 { font:10pt Arial, sans-serif; }
- .font6 { font:13pt Arial, sans-serif; }
- .font7 { font:14pt Arial, sans-serif; }
- .font8 { font:16pt Arial, sans-serif; }
- .font9 { font:18pt Arial, sans-serif; }
- .font10 { font:20pt Arial, sans-serif; }
- .font11 { font:24pt Arial, sans-serif; }
- .font12 { font:25pt Arial, sans-serif; }
- .font13 { font:31pt Arial, sans-serif; }
- .font14 { font:38pt Arial, sans-serif; }
- .font15 { font:60pt Arial, sans-serif; }
- .font16 { font:11pt Times New Roman, serif; }
- .font17 { font:14pt Times New Roman, serif; }
- .font18 { font:16pt Times New Roman, serif; }
+/* ===========================
+   DITA-OT Semantic CSS
+   PV3200U User Manual
+   =========================== */
+
+/* --- Topic Structure --- */
+.topic {
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+h1.title {
+  font-size: 20pt;
+}
+
+h2.title {
+  font-size: 18pt;
+}
+
+h3.title {
+  font-size: 16pt;
+}
+
+.shortdesc {
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+
+.body,
+.conbody,
+.taskbody,
+.refbody {
+  font-size: 10pt;
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.section>.title {
+  font-size: 18pt;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+}
+
+/* --- Block Elements --- */
+.p {
+  font-size: 10pt;
+  font-family: Arial, sans-serif;
+  margin: 6px 0;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+  padding: 8px 0;
+  margin: 10px 0;
+}
+
+.note--warning {
+  border-color: grey;
+}
+
+/* .note--caution {
+  border-color: #e68a00;
+} */
+
+.note--tip {
+  border-color: #2a9d2a;
+}
+
+.note--danger {
+  border-color: #900;
+}
+
+.note__icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.fig {
+  margin: 10px 0;
+}
+
+.fig.fig--center {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.lq {
+  font-family: Times New Roman, serif;
+  font-size: 11pt;
+}
+
+.pre,
+.codeblock {
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+/* --- Lists --- */
+.ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.ol {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.sl {
+  list-style: none;
+  padding-left: 0;
+}
+
+.li,
+.sli {
+  font-size: 10pt;
+  margin: 4px 0;
+}
+
+.dl {
+  margin: 8px 0;
+}
+
+.dt {
+  font-weight: bold;
+}
+
+.dd {
+  margin-left: 20px;
+}
+
+/* --- Steps (Task) --- */
+.steps {
+  list-style: decimal;
+  padding-left: 20px;
+}
+
+.steps-unordered {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.step {
+  margin: 6px 0;
+}
+
+.cmd {
+  font-size: 14pt;
+  font-family: Arial, sans-serif;
+}
+
+.info {
+  font-size: 10pt;
+  margin-top: 4px;
+}
+
+.stepresult {
+  font-size: 10pt;
+  margin-top: 4px;
+}
+
+.prereq,
+.context,
+.result,
+.postreq {
+  font-size: 10pt;
+  margin: 8px 0;
+}
+
+/* --- Tables --- */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.table.table--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thead .entry {
+  font-weight: bold;
+}
+
+.tbody .entry,
+.thead .entry {
+  border: 1px solid #999;
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 10pt;
+}
+
+.simpletable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* --- Inline Elements --- */
+.ph {
+  /* phrase - generic inline */
+}
+
+.codeph {
+  font-family: monospace;
+  background: #f4f4f4;
+  padding: 1px 4px;
+}
+
+.filepath {
+  font-family: monospace;
+  font-style: italic;
+}
+
+.uicontrol {
+  font-weight: bold;
+}
+
+.menucascade .uicontrol {
+  font-weight: bold;
+}
+
+.xref {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.term {
+  font-style: italic;
+}
+
+.cite {
+  font-style: italic;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* --- Navigation/Links --- */
+.related-links {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.link {
+  margin: 4px 0;
+}
+
+.linklist {
+  margin: 8px 0;
+}
+
+/* --- Layout Utilities --- */
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #000;
+  margin: 10px auto;
+}
+
+.power-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.power-item img {
+  width: 580px;
+  height: 80px;
+}
+
+.power-subimg img {
+  max-width: 100%;
+}
+
+.label {
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #232222;
+  height: 125px;
+}
+
+.scan-serv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scan-label {
+  font-size: 10px;
+}

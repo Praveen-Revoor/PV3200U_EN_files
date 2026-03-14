@@ -1,77 +1,8 @@
-.warningtag {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border-top: 2px solid #888;
-  border-bottom: 2px solid #888;
-}
+/* ===========================
+   style.css - Legacy Layout Utilities
+   Kept for backward compatibility
+   with power-container & scan layouts
+   =========================== */
 
-.warn-img img {
-  width: 40px;
-  height: 40px;
-}
-
-hr {
-  width: 100%;
-  border: none;
-  border-top: 1px solid #000;
-  margin: 10px auto;
-}
-
-
-.power-container {
-  display: flex;
-  justify-content: flex-start;
-  gap: 50px;
-}
-
-.power-item img {
-  width: 580px;
-  height: 80px;
-}
-
-.label {
-  display: flex;
-  gap: 20px;
-  font-size: 10px;
-}
-
-
-.divider {
-  width: 1px;
-  background-color: #232222;
-  height: 125px;
-}
-
-.scan-serv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.scan-label .font0 {
-  font-size: 10px;
-}
-
-.font14 img {
-  width: 50px;
-}
-
-.center-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center-table td {
-  vertical-align: top;
-}
-
-.img-center {
-  display: flex;
-  justify-content: center;
-}
-
-.img-center img {
-  width: 130px;
-  height: 154px;
-}
+/* These styles supplement PV3200U_EN.css */
+/* The primary DITA styling is in PV3200U_EN.css */
